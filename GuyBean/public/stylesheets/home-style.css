@@ -22,7 +22,9 @@ body {
 .main-nav{
   text-align: right;
   margin-top: 40px;
+  padding: 0px 30px 0px 0px;
 }
+
 
 .dropdown{
   position: relative;
@@ -69,12 +71,6 @@ li {
   position: absolute;
   display: block;
   top: -45px;
-}
-
-
-.right-nav{
-  float:right;
-  padding: 0px 30px 0px 0px;
 }
 
 /* MAP STYLING */
@@ -136,19 +132,54 @@ li {
 .Restaurant-title{
   margin-top: 40px;
   margin-bottom: 40px;
+  font-size: 25px;
+  font-family: "Arapey";
 }
 
 hr{
-  width: 90%;
+  width: 95%;
   height: 2px;
   background-color: black;
 }
 
 h1{
-  font-family: "Arapey";
-  text-indent: 120px;
-  font-size: 30px;
+  float: left;
+  padding-left: 40px ;
+  padding-bottom: 20px;
 }
+
+h3{
+  float: right;
+  padding-right: 70px;
+  padding-top: 20px;
+}
+
+h1:hover, h3:hover{
+  color: darkgrey;
+
+}
+
+/* RESTAURANT IMAGES AND OPTIONS  */
+.horizontal-images-row-1{
+  box-sizing: content-box;
+  cursor: grab;
+  display: flex;
+  height: 200px;
+  line-height: 15px;
+  position: relative;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-duration: 0s;
+  transition-property: transform, -webkit-transofrm;
+  user-select: none;
+  width: 1550px;
+  z-index: 1;
+  -webkit-user-drag: element;
+  
+}
+
+
+
+
 
 
 @media only screen and (max-width:800px) {
