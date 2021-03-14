@@ -1,0 +1,93 @@
+body {
+ margin: 0;
+ padding: 0;
+}
+
+.navbar{
+  background: #f2f5f5;
+  height: 110px;
+  width: 100%;
+  position: absolute;
+  font-size: 30px;
+  font-family: Arapey;
+  display: inline;
+}
+
+.navbar li:hover{
+  color: darkgrey;
+  cursor: pointer;
+}
+
+.main-nav{
+  text-align: right;
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-content{
+  position: absolute;
+  padding: 10px 0px 10px 0px;
+  top:100%;
+  left:0;
+  text-align: left;
+  display: none;
+  width: 100%;
+  font-size: 25px;
+}
+
+.dropdown-content li{
+  width: 100%
+}
+
+.dropdown-content li:hover{
+  color: black;
+  font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+}
+
+.GuyBean-Logo{
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  position: absolute;
+  display: block;
+  top: -45px;
+}
+
+
+.right-nav{
+  float:right;
+  padding: 0px 30px 0px 0px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
