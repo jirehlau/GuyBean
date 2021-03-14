@@ -87,13 +87,14 @@ li {
 
 .search-bar{
 	  position: absolute;
-    background: #cdd1d1;
+    background: #f2f5f5;
     max-width: 550px;
     width: 100%;
     padding: 15px;
     display: flex;
     border-radius: 5px;
-    left: 700px;
+    transform: translate(-50%, -50%);
+    left: 50%;
 }
 
 .search-bar .input {
@@ -106,7 +107,7 @@ li {
 }
 
 .searchbtn {
-    background: #f2f5f5;
+    background: #cacfcf;
     width: 10%;
     border-radius: 5px;
     position: relative;
@@ -120,6 +121,35 @@ li {
     transform: translate(-50%, -50%);
     font-size: 18px;
 }
+
+/* COUPON INPUT  */
+.coupon{
+ padding-top: 60px; 
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ height: 200px;
+ width: 450px;
+}
+
+/* RESTAURANT TITLE  */
+.Restaurant-title{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+hr{
+  width: 90%;
+  height: 2px;
+  background-color: black;
+}
+
+h1{
+  font-family: "Arapey";
+  text-indent: 120px;
+  font-size: 30px;
+}
+
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
