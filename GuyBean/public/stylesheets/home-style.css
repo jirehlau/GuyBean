@@ -307,33 +307,44 @@ h1:hover, h3:hover{
 /* THIS IS GUYBEAN PHONE APP DOWNLOADS AND PROMOTION SECTION */
 /* THIS IS GUYBEAN PHONE APP DOWNLOADS AND PROMOTION SECTION */
 
-
-.phone-prtotype{
-  height: 50vh;
-}
-/* 
-.download-section{
-  align-items: center;
-  box-sizing: border-box;
-  color: #363636;
-  font-weight: 400;
-  margin: 0px;
-  max-width: 1400px;
-  width: 1122px;
-  padding-right: 50px;
-  padding-top: 97px;;
-} */
-
-/* .download-section-wrap{
-  position: relative;
-  color: #363636;
+.download-container{
+  background-color: white;
   display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+  align-items: flex;
+  flex-direction: row;
+  padding-left: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+.phone-prototype{
+  height: 40vh;
+}
+
+.title-message {
+  padding-left: 5%;
+}
+
+.download-title{
+  font-size: 35px;
+  text-decoration: underline black;
   font-weight: 400;
-  max-width: 650px;
-  padding-right: 50px;
-} */
+}
+
+.download-message{
+  font-size: 25px;
+  max-width: 10cm;
+  font-weight: 200;
+}
+
+/* STYLING FOR THE FOOTER  */
+/* STYLING FOR THE FOOTER  */
+/* STYLING FOR THE FOOTER  */
+
+
+
+
 
 
 @media only screen and (max-width:800px) {
