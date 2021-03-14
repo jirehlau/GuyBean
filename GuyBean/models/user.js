@@ -1,6 +1,12 @@
 var mongoose = require('mongoose');
-var factSchema = new mongoose.Schema({
+let Schema = mongoose.Schema;
+
+var GuyBeanSchema = new Schema({
     text: String
   }, {
     timestamps: true
   });
+
+  let GuyBeanModel = mongoose.model('GuyBean', GuyBeanSchema)
+
+  module.exports = GuyBeanModel
