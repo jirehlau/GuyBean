@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi One</title>
+    <link rel='stylesheet' href='/stylesheets/restaurant-style.css' />
+
+</head>
+<body>
+    <h1>Sushi One</h1>
+
+    <section id="sushi-one-page">
+        <div>Title: </div>
+        <div><%= movie.title %></div>
+        <div>Release Year: </div>
+        <div><%= movie.releaseYear %></div>
+        <div>Rating: </div>
+        <div><%= movie.mpaaRating %></div>
+        <div>Cast: </div>
+        <div><%= movie.cast.join(', ') %></div>
+        <div>Now Showing: </div>
+        <div><%= movie.nowShowing ? 'Yes' : 'Nope' %></div>
+      </section>
+
+</body>
+</html>

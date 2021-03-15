@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GuyBean</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+  <script type="text/javascript" src="/GuyBean/public/javascripts/app.js"></script>
+  <link rel='stylesheet' href='/stylesheets/home-style.css' />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+      <li><a href="#"><img src="/images/GuyBean-Logo.png" class="GuyBean-Logo"></a></li>
+        <ul class="main-nav">
+            <li class="dropdown"><a href="#">Company</a>
+              <ul class="dropdown-content">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </li> &nbsp &nbsp
+            <li><a href="#">For Businesses</a> </li>&nbsp
+
+            <li class="google-btn"><a href="#">
+              <% if (user) { %>
+                  <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+              <% } else { %>
+                  <a href="/auth/google"><i class="material-icons left">vpn_key</i>Sign in with Google</a>
+              <% } %>
+            </a>
+          </li>
+        </ul>
+  </div>
+ 
+<!-- THIS IS MY MAP, WHICH IS RIGHT BELOW MY NAVBAR -->
+
+  <div class="googleMaps">
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.9205779508434!2d-79.38871828408237!3d43.670621579120684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34ae7b7df47d%3A0xe2028002e7a6144a!2sBloor%E2%80%93Yonge%20Station!5e0!3m2!1sen!2sca!4v1615715611533!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" class="Map"></iframe></iframe></p>
+  </div>
+
+<!-- THIS IS MY SEARCH BAR SECTION  -->
+<div class="searchBar-section">
+<div class="search-bar" style= "justify-content: center; align-items: center;">
+	<input type="text" class="input" 
+	placeholder="What cuisine are you looking for?">
+	<div class="searchbtn"><i class="fas fa-search"></i></div>
+</div>
+</div>
+
+<!-- FOOD DISCOUNT INPUT  -->
+
+<div class="discount-coupon">
+  <img src="/images/food-coupon.jpg" class="coupon">
+</div>
+
+<!-- RESTAURANT TITLE  -->
+
+<div class="Restaurant-title">
+  <hr>
+   <ul class="restaurant-view">
+    <li><h1><a href="#">Restaurants</a></h1></li>
+    <li><h3><a href="#">View all</a></h3></li>
+  </ul>
+  <hr>
+</div>
+
+<!-- FIRST SET OF RESTAURANT IMAGES AND OPTIONS -->
+<!-- FIRST SET OF RESTAURANT IMAGES AND OPTIONS -->
+<!-- FIRST SET OF RESTAURANT IMAGES AND OPTIONS -->
+<div class="horizontal-list-content">
+    <div class="flex-swipe-wrapper">
+
+      <!-- RESTAURANT 1 -->
+      <div class="grid-card-wrapper">
+        <a href="/users/sushione" class="no-underline">
+          <div class="grid-card">
+            <div class="grid-card-image-wrapper"> <img src="/images/jap.jpeg" class="grid-card-image"></div>
+            <div class="flex-column">
+              <div class="title">Sushi One</div><br>
+              <div class="subTitle">Japanese  ||  Toronto</div>
+              <div class="subTitle">$$$  ||  2506 reservations</div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+
+       <!-- RESTAURANT 2 -->
+       <div class="grid-card-wrapper">
+        <a class="no-underline">
+          <div class="grid-card">
+            <div class="grid-card-image-wrapper"> <img src="/images/korean.jpeg" class="grid-card-image"></div>
+            <div class="flex-column">
+              <div class="title">Best Korean</div><br>
+              <div class="subTitle">Korean  ||  Markham</div>
+              <div class="subTitle">$$  ||  4519 reservations</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+       <!-- RESTAURANT 3 -->
+       <div class="grid-card-wrapper">
+        <a class="no-underline">
+          <div class="grid-card">
+            <div class="grid-card-image-wrapper"> <img src="/images/mexican.jpeg" class="grid-card-image"></div>
+            <div class="flex-column">
+              <div class="title">Mexican Food</div><br>
+              <div class="subTitle">Mexican  ||  Richmond Hill</div>
+              <div class="subTitle">$$  ||  1969 reservations</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+       <!-- RESTAURANT 4 -->
+       <div class="grid-card-wrapper">
+        <a class="no-underline">
+          <div class="grid-card">
+            <div class="grid-card-image-wrapper"> <img src="/images/indian.jpg" class="grid-card-image"></div>
+            <div class="flex-column">
+              <div class="title">Indian Food</div><br>
+              <div class="subTitle">Indian  ||  Brampton</div>
+              <div class="subTitle">$$  ||  1543 reservations</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+</div>
+
+
+<!-- SECOND SET OF IMAGES AND OPTIONS -->
+<!-- SECOND SET OF IMAGES AND OPTIONS -->
+<!-- SECOND SET OF IMAGES AND OPTIONS -->
+<div class="horizontal-list-content2">
+    <div class="flex-swipe-wrapper2">
+
+      <!-- RESTAURANT 5 -->
+      <div class="grid-card-wrapper2">
+        <a class="no-underline2">
+          <div class="grid-card2">
+            <div class="grid-card-image-wrapper2"> <img src="/images/american.jpeg" class="grid-card-image2"></div>
+            <div class="flex-column2">
+              <div class="title2">Pizza</div><br>
+              <div class="subTitle2">American  ||  Barrie</div>
+              <div class="subTitle2">$$$  ||  1397 reservations</div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+
+       <!-- RESTAURANT 6 -->
+       <div class="grid-card-wrapper2">
+        <a class="no-underline2">
+          <div class="grid-card2">
+            <div class="grid-card-image-wrapper2"> <img src="/images/chinese.jpeg" class="grid-card-image2"></div>
+            <div class="flex-column2">
+              <div class="title2">Chinese Food</div><br>
+              <div class="subTitle2">Chinese  ||  Markham</div>
+              <div class="subTitle2">$$  ||  1954 reservations</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+       <!-- RESTAURANT 7 -->
+       <div class="grid-card-wrapper2">
+        <a class="no-underline2">
+          <div class="grid-card2">
+            <div class="grid-card-image-wrapper2"> <img src="/images/srilankan.jpeg" class="grid-card-image2"></div>
+            <div class="flex-column2">
+              <div class="title2">Sri Lankan Food</div><br>
+              <div class="subTitle2">Sri Lankan  ||  Scarborough</div>
+              <div class="subTitle2">$$  ||  1654 reservations</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+       <!-- RESTAURANT 8 -->
+       <div class="grid-card-wrapper2">
+        <a class="no-underline2">
+          <div class="grid-card2">
+            <div class="grid-card-image-wrapper2"> <img src="/images/italian.jpg" class="grid-card-image2"></div>
+            <div class="flex-column2">
+              <div class="title2">Italian Food</div><br>
+              <div class="subTitle2">Italian  ||  Thornhill</div>
+              <div class="subTitle2">$$  ||  3246 reservations</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+</div>
+
+<!-- THIS IS GUYBEAN PHONE APP DOWNLOADS AND PROMOTION SECTION  -->
+<!-- THIS IS GUYBEAN PHONE APP DOWNLOADS AND PROMOTION SECTION  -->
+<!-- THIS IS GUYBEAN PHONE APP DOWNLOADS AND PROMOTION SECTION  -->
+
+<div class="download-container">
+  <img src="/images/GuyBean-phone.png" class="phone-prototype">
+  <div class="title-message">
+    <h2 class="download-title">Download GuyBean Today</h1>
+    <h2 class="download-message">With our newly launched app, it is easier than before to book your discounted dine in</h3>
+    </div>
+</div>
+
+
+<!-- THIS IS THE FOOTER OF THE MAIN PAGE -->
+<!-- THIS IS THE FOOTER OF THE MAIN PAGE -->
+<!-- THIS IS THE FOOTER OF THE MAIN PAGE -->
+
+<!-- LEFT  FOOTER  -->
+<div class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2 class="logo-text">Guy<span>Bean</span></h2>
+      <p1>GuyBean is a web based restaurant booking platform offering off-peak hour discounts of up to 50% off</p>
+        <div class="contact">
+          <span><i class="fas fa-phone"></i> &nbsp; 123-456-7890</span>
+          <span><i class="fas fa-envelope"></i> &nbsp; info@guybean.com</span>
+        </div>
+        <br>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- MIDDLE FOOTER -->
+    <div class="footer-section links">
+      <h4>Support</h4>
+      <ul>
+        <a href="#">
+          <li>About Us</li>
+        </a>
+        <a href="#">
+          <li>Careers</li>
+        </a>
+        <a href="#">
+          <li>Contact Us</li>
+        </a>
+        <a href="#">
+          <li>FAQ</li>
+        </a>
+        <a href="#">
+          <li>Terms of Use</li>
+        </a>
+        <a href="#">
+          <li>Privacy Policy</li>
+        </a>
+      </ul>
+    </div>
+
+
+    <div class="footer-bottom">
+      &copy; GuyBean | Designed by Jireh Lau
+    </div>
+</div>
+
+</body>
+
+</html>
