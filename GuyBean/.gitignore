@@ -1,0 +1,4 @@
+#WHAT FILES GIT SHOULD IGNORE
+
+.env
+node_modules/ 
