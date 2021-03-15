@@ -3,11 +3,17 @@ var userCtrl = require('../controllers/user');
 
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+// router.get('/', function(req, res, next) {
+//   res.render('respond with a resource');
+// });
 
-router.get('/home', userCtrl.index);
+router.get('/', userCtrl.index);
+
+router.get('/loggedin',userCtrl.loggedIn);
+
+router.get('/restaurantprofile',userCtrl.restaurantProfile)
+
+router.get('/restaurant1',userCtrl.restaurant1)
 
 router.post('/facts', isLoggedIn, userCtrl.addFact);
 
