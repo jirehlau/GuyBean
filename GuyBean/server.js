@@ -16,6 +16,8 @@ var usersRouter = require('./routes/users');
 let dotenv = require('dotenv')
 dotenv.config()
 
+require('./config/database')
+
 var app = express();
 
 require('./config/database');
