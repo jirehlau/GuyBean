@@ -8,8 +8,17 @@ module.exports = {
   restaurantProfile,
   sushiOne,
   addRestaurants,
+  addedRestaurant,
 };
 
+
+function addRestaurants(req,res){
+  res.render('restaurantUser/addRestaurant')
+}
+
+function addedRestaurant(req,res){
+  res.render('restaurantUser/addedRestaurant')
+}
 
 function restaurantProfile(req,res){
   res.render('restaurantUser/restaurantProfile')
@@ -17,10 +26,6 @@ function restaurantProfile(req,res){
 
 function sushiOne(req,res){
   res.render('restaurants/sushiOne')
-}
-
-function addRestaurants(req,res){
-  res.render('restaurantUser/addRestaurant')
 }
 
 
