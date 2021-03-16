@@ -1,4 +1,6 @@
-const USER = require('../models/user');
+const USER = require('../models/usersModel');
+const RESTAURANTMODEL = require('../models/restaurantsModel');
+
 
 module.exports = {
   index,
@@ -16,7 +18,15 @@ function addRestaurants(req,res){
   res.render('restaurantUser/addRestaurant')
 }
 
-function addedRestaurant(req,res){
+async function addedRestaurant(req,res){
+  console.log(req.body)
+  await RESTAURANTMODEL.create ({
+    name: req.body.title,
+    registrationDate: req.body.releaseYear,
+    cuisineType: req.body.Cuisine,
+    restaurantInfo: req.body.comment,
+    partnerReady: false,
+  })
   res.render('restaurantUser/addedRestaurant')
 }
 

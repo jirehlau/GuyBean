@@ -15,7 +15,7 @@ router.get('/restaurantprofile',userCtrl.restaurantProfile)
 
 router.get('/addrestaurant',userCtrl.addRestaurants)
 
-router.get('/addedrestaurant', userCtrl.addedRestaurant)
+router.post('/addedrestaurant', userCtrl.addedRestaurant)
 
 router.get('/sushione',userCtrl.sushiOne)
 
