@@ -7,15 +7,26 @@ module.exports = {
   loggedIn,
   restaurantProfile,
   sushiOne,
+  addRestaurants,
+  addedRestaurant
 };
+
+function addedRestaurant(req,res){
+  res.render('restaurantUser/addedRestaurant')
+} 
 
 function restaurantProfile(req,res){
   res.render('restaurantUser/restaurantProfile')
 }
 
 function sushiOne(req,res){
-  res.render('restaurantUser/sushiOne')
+  res.render('restaurants/sushiOne')
 }
+
+function addRestaurants(req,res){
+  res.render('restaurantUser/addRestaurant')
+}
+
 
 function index(req, res, next) {
   console.log(req.query)

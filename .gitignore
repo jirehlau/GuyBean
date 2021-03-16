@@ -1,0 +1,6 @@
+#WHAT FILES GIT SHOULD IGNORE
+
+.env
+config/passport.js
+node_modules/ 
+.DS_Store

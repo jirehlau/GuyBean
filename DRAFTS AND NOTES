@@ -1,0 +1,225 @@
+  <!-- THIS IS THE FOOTER OF THE MAIN PAGE -->
+<!-- THIS IS THE FOOTER OF THE MAIN PAGE -->
+<!-- THIS IS THE FOOTER OF THE MAIN PAGE -->
+
+<!-- LEFT  FOOTER  -->
+<div class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2 class="logo-text">Guy<span>Bean</span></h2>
+      <p1>GuyBean is a web based restaurant booking platform offering off-peak hour discounts of up to 50% off</p>
+        <div class="contact">
+          <span><i class="fas fa-phone"></i> &nbsp; 123-456-7890</span>
+          <span><i class="fas fa-envelope"></i> &nbsp; info@guybean.com</span>
+        </div>
+        <br>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- MIDDLE FOOTER -->
+    <div class="footer-section links">
+      <h4>Support</h4>
+      <ul>
+        <a href="#">
+          <li>About Us</li>
+        </a>
+        <a href="#">
+          <li>Careers</li>
+        </a>
+        <a href="#">
+          <li>Contact Us</li>
+        </a>
+        <a href="#">
+          <li>FAQ</li>
+        </a>
+        <a href="#">
+          <li>Terms of Use</li>
+        </a>
+        <a href="#">
+          <li>Privacy Policy</li>
+        </a>
+      </ul>
+    </div>
+
+
+    <div class="footer-bottom">
+      &copy; GuyBean | Designed by Jireh Lau
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+/* STYLING FOR THE FOOTER  */
+/* STYLING FOR THE FOOTER  */
+/* STYLING FOR THE FOOTER  */
+
+/* LEFT FOOTER  */
+/* LEFT FOOTER  */
+/* LEFT FOOTER  */
+
+.footer{
+    background: #f2f5f5;
+    color: #363636;
+    height: 400px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+  }
+  
+  .footer .footer-content{
+    height: 350px;
+    display: flex;
+  }
+  
+  .footer .footer-content .footer-section{
+    flex: 1;
+    padding-left: 25px;
+  }
+  
+  .footer .footer-content h2 {
+    padding-top: 2.5%;
+    color: #363636;
+    font-size: 3em;
+  }
+  
+  
+  .footer .footer-content .about h2 span{
+    color: darkgrey;
+  }
+  
+  .footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+  
+  
+  .footer .footer-content .about .socials a{
+    border: 1px solid gray;
+    width: 35px;
+    height: 28px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border-radius: 5px;
+    transition: all .6s;
+  }
+  
+  .footer .footer-content .about .socials a:hover{
+    border: 1.5px solid #363636;
+    color: #363636;
+    transition: all .6s;
+  }
+  
+  .footer .footer-content .footer-section .about .contact .span{
+    display: block;
+    font-size: 1.1em;
+  }
+  
+  
+  
+  /* MIDDLE FOOTER  */
+  /* MIDDLE FOOTER  */
+  /* MIDDLE FOOTER  */
+  .footer .footer-content .links{
+    text-align: center;
+  }
+  
+  .footer .footer-content h4{
+    color: #363636;
+    font-size: 3rem;
+    padding-left: 5%;
+  }
+  
+  
+  .footer .footer-content .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    transition: all 0.6s;
+  }
+  
+  .footer .footer-content .links ul a:hover{
+    color: black;
+    margin-left: 20px;
+    transition: all 0.6s;
+  }
+  
+  
+  
+  
+  /* BELOW THE FOOTER  */
+  /* BELOW THE FOOTER  */
+  /* BELOW THE FOOTER  */
+  .footer .footer-bottom{
+    background-color: darkgrey;
+    color: #f2f5f5;
+    font-size: 15px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px
+  }
+  
+  
+  /* MEDIA QUIRIES */
+  
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    body {
+      width: 80%;
+      padding: 0;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    body {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+<table id="restaurant-list">
+    <thead>
+      <tr>
+        <th>Restaurant Name</th>
+        <th>Cuisine</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% movies.forEach(function(m) { %>
+        <tr>
+          <td><%= m.title %></td>
+          <td><%= m.releaseYear %></td>
+          <td><a href="/movies/<%= m._id %>">DETAILS</a></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    

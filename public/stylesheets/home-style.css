@@ -1,13 +1,13 @@
 body {
  margin: 0;
  padding: 0;
- background-color: #f2f5f5;
+ background-color: white;
 }
 
 .navbar{
   background: #f2f5f5;
   top: 0px;
-  height: 115px;
+  height: 110px;
   width: 100%;
   position: absolute;
   font-size: 30px;
@@ -77,8 +77,9 @@ li {
 /* MAP STYLING */
 
 .Map {
+  padding-top: 90px;
   width: 100%;
-  height: 500px;
+  height: 450px;
 }
 
 /* SEARCH BAR STYLING */
@@ -351,6 +352,8 @@ h1:hover, h3:hover{
   color: #363636;
   height: 400px;
   position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer .footer-content{
@@ -408,17 +411,17 @@ h1:hover, h3:hover{
 
 
 
-/* MIDDLE FOOTER  */
-/* MIDDLE FOOTER  */
-/* MIDDLE FOOTER  */
+/* RIGHT FOOTER  */
+/* RIGHT FOOTER  */
+/* RIGHT FOOTER  */
 .footer .footer-content .links{
   text-align: center;
 }
 
 .footer .footer-content h4{
   color: #363636;
-  font-size: 3rem;
-  padding-left: 5%;
+  font-size: 2.5rem;
+  padding-left: 9%;
 }
 
 
