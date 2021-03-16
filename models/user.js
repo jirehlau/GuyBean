@@ -9,26 +9,27 @@ var GuyBeanSchema = new Schema({
 
   let GuyBeanModel = mongoose.model('GuyBean', GuyBeanSchema)
 
-const addedRestaurantSchema = new Schema({
-  legalRestaurantName: {
-  type: String,
-  required: true
-},
-  registrationDate: {
-    type: Date,
-    default: function(){
-      return new Date().getFullYear();
-    }
-  },
-  cuisineType: String,
-  information: [String],
-  reviews: [GuyBeanSchema],
-}, {
-    timestamps: true,
-})
 
+// const addedRestaurantSchema = new Schema({
+//   restaurantName: {
+//   type: String,
+//   required: true
+// },
+//   registrationDate: {
+//     type: Date,
+//     default: function(){
+//       return new Date().getFullYear();
+//     }
+//   },
+//   cuisineType: String,
+//   information: [String],
+//   reviews: [GuyBeanSchema],
+// }, {
+//     timestamps: true,
+// })
 
+//   let restaurantsModel = mongoose.model('restAddition', addedRestaurantSchema)
 
-  module.exports = GuyBeanModel
+//   module.exports = restaurantsModel
 
 

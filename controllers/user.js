@@ -12,7 +12,8 @@ module.exports = {
 };
 
 function addedRestaurant(req,res){
-  res.render('restaurantUser/addedRestaurant')
+  res.render('addedRestaurant.ejs', {restAddition: req.body})
+  
 } 
 
 function restaurantProfile(req,res){
