@@ -8,13 +8,8 @@ module.exports = {
   restaurantProfile,
   sushiOne,
   addRestaurants,
-  addedRestaurant
 };
 
-function addedRestaurant(req,res){
-  res.render('addedRestaurant.ejs', {restAddition: req.body})
-  
-} 
 
 function restaurantProfile(req,res){
   res.render('restaurantUser/restaurantProfile')
