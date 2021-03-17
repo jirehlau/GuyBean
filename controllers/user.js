@@ -19,9 +19,10 @@ module.exports = {
 };
 
 async function myRestaurants(req,res){
-  let MyRestaurants = await RESTAURANTMODEL.find();
+  let MyRestaurants = await RESTAURANTMODEL.find({userId: req.user.id});
+  console.log("RESTAURANT LIST")
   console.log(MyRestaurants)
-  res.render('restaurantUser/myRestaurants',{ MyRestaurants: MyRestaurants})
+  res.render('restaurantUser/myRestaurants',{MyRestaurants: MyRestaurants})
 }
 
 function forBusinesses(req,res){
@@ -40,6 +41,7 @@ async function addedRestaurant(req,res){
     cuisineType: req.body.Cuisine,
     restaurantInfo: req.body.comment,
     partnerReady: false,
+    userId: req.user.id,
   })
   res.redirect('http://localhost:3000/users/myRestaurants')
 }

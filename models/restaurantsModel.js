@@ -3,6 +3,10 @@ let Schema = mongoose.Schema;
 
 
 var restaurantSchema = new Schema({
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    },
     name: String,
     registrationDate: Date,
     cuisineType: String,

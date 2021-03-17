@@ -117,3 +117,6 @@ body {
     text-align: center;
   }
 
+  #restInfo{
+    width: 500px;
+  }
