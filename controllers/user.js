@@ -38,7 +38,7 @@ async function addedRestaurant(req,res){
     restaurantInfo: req.body.comment,
     partnerReady: false,
   })
-  res.render('restaurantUser/addedRestaurant')
+  res.redirect('http://localhost:3000/users/myRestaurants')
 }
 
 function restaurantProfile(req,res){
