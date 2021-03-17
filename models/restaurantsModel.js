@@ -16,6 +16,6 @@ var restaurantSchema = new Schema({
     timestamps: true
   });
 
-  let restaurantModel = mongoose.model('restuarantSchema', restaurantSchema)
+let restaurantModel = mongoose.model('restuarantSchema', restaurantSchema)
 
-    module.exports = restaurantModel;
+module.exports = restaurantModel;

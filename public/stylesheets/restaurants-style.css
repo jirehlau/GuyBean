@@ -98,6 +98,12 @@ h1{
     border:2px solid red;
 }
 
+#menuSection{
+  background-color: #f2f5f5;
+  height: 530px;
+  padding-top: 20px;
+}
+
 .subContainer:first-child{
     margin-right: 20px
 }
@@ -118,9 +124,9 @@ p{
 }
 #discount{
     float: right;
-    padding-right: 2.5%;
+    padding-right: 2%;
     font-size: 25px;
-    background-color: #B8C0C2;
+    border: 2px black solid;
     width: 30px;
 }
 
