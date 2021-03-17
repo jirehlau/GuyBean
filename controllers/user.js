@@ -14,6 +14,8 @@ module.exports = {
   forBusinesses,
   myRestaurants,
   aboutUs,
+  contactUs,
+  team,
 };
 
 function myRestaurants(req,res){
@@ -52,6 +54,13 @@ function aboutUs(req,res){
   res.render('GuyBean/aboutUs')
 }
 
+function contactUs(req,res){
+  res.render('GuyBean/contactUs')
+}
+
+function team(req,res){
+  res.render('GuyBean/team')
+}
 
 
 function index(req, res, next) {

@@ -30,6 +30,8 @@ router.delete('/facts/:id', userCtrl.delFact);
 // GUYBEAN SECTION CONTAINING THE ABOUT US PAGE, CONTACT US PAGE, AND TEAMS PAGE
 
 router.get ('/aboutus',userCtrl.aboutUs)
+router.get('/contactus',userCtrl.contactUs)
+router.get('/team',userCtrl.team)
 
 function isLoggedIn(req, res, next) {
   if ( req.isAuthenticated() ) return next();
