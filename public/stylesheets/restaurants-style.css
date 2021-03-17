@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: white;
    }
    
    .navbar{
@@ -77,3 +77,62 @@ body {
 
    /* HEADER, RIGHT BELOW THE NAV BAR  */
 
+h1{
+    padding-top: 2.5%;
+    padding-left: 10%;
+}
+
+/* BELOW THE HEADER, CONTAINING THE PICTURES AND RESERVATION FORM */
+.image1{
+    padding-left: 12.5%;
+    cursor: pointer;
+}
+
+.container-below-title{
+    display:flex;
+    height: 500px;
+}
+
+.subContainer{
+    flex:0.5;
+    border:2px solid red;
+}
+
+.subContainer:first-child{
+    margin-right: 20px
+}
+
+.image{
+    padding-left: 7%;
+    height: 80%;
+    width: 80%;
+}
+
+/* THIS IS THE MENU SECTION */
+h2{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+#discount{
+    float: right;
+    padding-right: 5%;
+    font-size: 25px;
+    background-color: #f2f5f5;
+    width: 30px;
+}
+
+#menu-item{
+    float:left;
+}
+
+.table-menu{
+    font-size: 20px;
+}
+
+.table-titles{
+    font-weight: bolder;
+    font-size: 25px;
+}
