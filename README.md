@@ -13,3 +13,4 @@ GuyBean is a web-based platform offering dine ins bookings by providing time-bas
 
 # My restaurants
 ![My Restaurant](public/images/myRestaurants.png)
+
