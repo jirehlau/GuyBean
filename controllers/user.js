@@ -18,8 +18,10 @@ module.exports = {
   team,
 };
 
-function myRestaurants(req,res){
-  res.render('restaurantUser/myRestaurants')
+async function myRestaurants(req,res){
+  let MyRestaurants = await RESTAURANTMODEL.find();
+  console.log(MyRestaurants)
+  res.render('restaurantUser/myRestaurants',{ MyRestaurants: MyRestaurants})
 }
 
 function forBusinesses(req,res){
@@ -28,6 +30,7 @@ function forBusinesses(req,res){
 function addRestaurants(req,res){
   res.render('restaurantUser/addRestaurant')
 }
+
 
 async function addedRestaurant(req,res){
   console.log(req.body)

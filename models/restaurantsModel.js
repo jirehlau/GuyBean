@@ -7,7 +7,7 @@ var restaurantSchema = new Schema({
     registrationDate: Date,
     cuisineType: String,
     restaurantInfo: String,
-    partnerReady: Boolean,
+    partnerReady: { type: Boolean, default: false},
   }, {
     timestamps: true
   });
