@@ -17,11 +17,19 @@ router.get('/addrestaurant',userCtrl.addRestaurants)
 
 router.post('/addedrestaurant', userCtrl.addedRestaurant)
 
+router.get ('/forBusinesses',userCtrl.forBusinesses)
+
+router.get('/myrestaurants',userCtrl.myRestaurants)
+
 router.get('/sushione',userCtrl.sushiOne)
 
 router.post('/facts', isLoggedIn, userCtrl.addFact);
 
 router.delete('/facts/:id', userCtrl.delFact);
+
+// GUYBEAN SECTION CONTAINING THE ABOUT US PAGE, CONTACT US PAGE, AND TEAMS PAGE
+
+router.get ('/aboutus',userCtrl.aboutUs)
 
 function isLoggedIn(req, res, next) {
   if ( req.isAuthenticated() ) return next();

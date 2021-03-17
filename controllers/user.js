@@ -11,9 +11,18 @@ module.exports = {
   sushiOne,
   addRestaurants,
   addedRestaurant,
+  forBusinesses,
+  myRestaurants,
+  aboutUs,
 };
 
+function myRestaurants(req,res){
+  res.render('restaurantUser/myRestaurants')
+}
 
+function forBusinesses(req,res){
+  res.render('forBusinesses.ejs')
+}
 function addRestaurants(req,res){
   res.render('restaurantUser/addRestaurant')
 }
@@ -37,6 +46,12 @@ function restaurantProfile(req,res){
 function sushiOne(req,res){
   res.render('restaurants/sushiOne')
 }
+
+// GUYBEAN SECTION CONTAINING THE ABOUT US PAGE, CONTACT US PAGE, AND TEAMS PAGE
+function aboutUs(req,res){
+  res.render('GuyBean/aboutUs')
+}
+
 
 
 function index(req, res, next) {
@@ -87,3 +102,5 @@ function delFact(req, res, next) {
     });
   });
 }
+
+
