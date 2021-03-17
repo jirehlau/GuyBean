@@ -90,12 +90,12 @@ h1{
 
 .container-below-title{
     display:flex;
-    height: 600px;
+    height: 550px;
 }
 
 .subContainer{
     flex:0.5;
-    /* border:2px solid red; */
+    border:2px solid red;
 }
 
 .subContainer:first-child{
@@ -137,3 +137,24 @@ p{
     font-size: 25px;
 }
 
+/* MAP STYLING */
+.container2{
+  display:flex;
+  height: 500px;
+}
+
+.subContainer2{
+  flex:0.5;
+  border:2px solid red;
+}
+
+.subContainer2:first-child{
+  margin-right: 20px
+}
+
+.sushiOneMap{
+  border: 2px red solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -120,3 +120,13 @@ body {
   #restInfo{
     width: 500px;
   }
+
+
+#list a {
+  border-radius: 4px;
+  border: 2px black solid;
+  background-color: #B8C0C2;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 20px;
+}
