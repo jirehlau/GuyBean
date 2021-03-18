@@ -16,14 +16,25 @@ module.exports = {
   aboutUs,
   contactUs,
   team,
+  myRestaurantsDetails,
 };
 
 async function myRestaurants(req,res){
-  let MyRestaurants = await RESTAURANTMODEL.find({userId: req.user.id});
-  console.log("RESTAURANT LIST")
-  console.log(MyRestaurants)
+  let MyRestaurants = await RESTAURANTMODEL.find({userId: req.user._id});
+  // console.log("RESTAURANT LIST")
+  // console.log(MyRestaurants)
   res.render('restaurantUser/myRestaurants',{MyRestaurants: MyRestaurants})
 }
+
+
+async function myRestaurantsDetails(req, res) {
+ await RESTAURANTMODEL.findById(req.params.id, function(err, MyRestaurants) {
+    console.log(MyRestaurants)
+    res.render('restaurantUser/details', { title: 'My Restaurant Details', MyRestaurants});
+  });
+}
+
+
 
 function forBusinesses(req,res){
   res.render('forBusinesses.ejs')
@@ -116,5 +127,3 @@ function delFact(req, res, next) {
     });
   });
 }
-
-
