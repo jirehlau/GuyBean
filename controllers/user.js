@@ -17,7 +17,7 @@ module.exports = {
   team,
   myRestaurantsDetails,
   homeCopy,
-  restaurantTemplate,
+  myRestaurantTemplate,
 };
 
 
@@ -25,9 +25,11 @@ function homeCopy(req,res){
   res.render('user/homeCopy')
 }
 
-function restaurantTemplate(req,res){
-  res.render('restaurants/restaurantTemplate')
-}
+function myRestaurantTemplate(req,res){
+  let RestaurantTemplate = RESTAURANTMODEL.findById(req.params.id, function(err, RestaurantTemplate) {
+res.render('restaurants/restaurantTemplate', {RestaurantTemplate:RestaurantTemplate})
+  }); 
+  }
 
 
 async function myRestaurants(req,res){
