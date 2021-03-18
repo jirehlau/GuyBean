@@ -37,16 +37,12 @@
           <thead>
             <tr>  
               <th>Restuarant Name</th>
-              <th>Incorporation Date</th>
               <th>Cuisine Type</th>
-              <th>Restaurant Information</th>
             </tr>
-             <% for (let mr of MyRestaurants) {%>
+            <% for (let mr of MyRestaurants) {%>
             <tr>
               <td><%= mr.name %></td>
-              <td><%= mr.registrationDate %></td>
               <td><%= mr.cuisineType %></td>
-              <td id="restInfo"><%= mr.restaurantInfo %></td>
               <td><a href="/users/<%= mr._id %>">DETAILS</a></td>
             </tr>
             <% } %>

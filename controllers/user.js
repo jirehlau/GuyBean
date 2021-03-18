@@ -26,14 +26,12 @@ async function myRestaurants(req,res){
 }
 
 
-async function myRestaurantsDetails(req, res) {
- await RESTAURANTMODEL.findById(req.params.id, function(err, MyRestaurants) {
-    console.log(MyRestaurants)
-    res.render('restaurantUser/details', { title: 'My Restaurant Details', MyRestaurants});
+  function myRestaurantsDetails(req, res) {
+   RESTAURANTMODEL.findById(req.params.id, function(err, MyRestaurant) {
+   console.log(MyRestaurant)
+    res.render('restaurantUser/details', { title: 'My Restaurant Details', MyRestaurant});
   });
 }
-
-
 
 function forBusinesses(req,res){
   res.render('forBusinesses.ejs')

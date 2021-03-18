@@ -28,9 +28,7 @@
             <li><a href="/users/myRestaurants">My Restaurants</a> </li>&nbsp
           </ul>
 
-
-             <div class="myRestaurants-title">
-        </div>
+       
 <div class="myRestaurants-container">
         <table id="list">
           <thead>
@@ -40,9 +38,11 @@
               <th>Cuisine Type</th>
               <th>Restaurant Information</th>
             </tr>
-            <% for (let MR of Object.keys(MyRestaurants)) {%>
+
+            <% for (let MR of MyRestaurant) {%>
+
             <tr>
-              <td><%= MR.name %></td>
+              <td><%= MR.name%></td>
               <td><%= MR.registrationDate %></td>
               <td><%= MR.cuisineType %></td>
               <td id="restInfo"><%= MR.restaurantInfo %></td>
