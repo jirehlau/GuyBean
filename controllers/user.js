@@ -26,8 +26,8 @@ async function myRestaurants(req,res){
 }
 
 
-  function myRestaurantsDetails(req, res) {
-   RESTAURANTMODEL.findById(req.params.id, function(err, MyRestaurant) {
+async function myRestaurantsDetails(req, res) {
+   await RESTAURANTMODEL.findById(req.params.id, function(err, MyRestaurant) {
    console.log(MyRestaurant)
     res.render('restaurantUser/details', { title: 'My Restaurant Details', MyRestaurant});
   });
