@@ -16,6 +16,7 @@ module.exports = {
   contactUs,
   team,
   myRestaurantsDetails,
+  homeCopy,
 };
 
 async function myRestaurants(req,res){
@@ -56,6 +57,14 @@ async function addedRestaurant(req,res){
   })
   res.redirect('http://localhost:3000/users/myRestaurants')
 }
+
+
+async function homeCopy(req,res){
+  res.render('user/homeCopy')
+}
+
+
+
 
 function sushiOne(req,res){
   res.render('restaurants/sushiOne')

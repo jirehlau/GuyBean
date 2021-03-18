@@ -9,6 +9,9 @@ var userCtrl = require('../controllers/user');
 
 router.get('/', userCtrl.index);
 
+router.get('/homecopy',userCtrl.homeCopy);
+
+
 router.get('/loggedin',userCtrl.loggedIn);
 
 router.get('/addrestaurant',userCtrl.addRestaurants)
