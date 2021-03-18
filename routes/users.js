@@ -17,9 +17,9 @@ router.get ('/forBusinesses',userCtrl.forBusinesses)
 
 router.get('/myrestaurants',userCtrl.myRestaurants)
 
-router.get('/:id',userCtrl.myRestaurantsDetails)
+router.get('/myrestaurants/:id',userCtrl.myRestaurantsDetails)
 
-router.get('/sushione',userCtrl.sushiOne)
+router.get('/sushiOne',userCtrl.sushiOne)
 
 router.post('/addedrestaurant', userCtrl.addedRestaurant)
 router.post('/facts', isLoggedIn, userCtrl.addFact);

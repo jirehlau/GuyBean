@@ -28,25 +28,30 @@
             <li><a href="/users/myRestaurants">My Restaurants</a> </li>&nbsp
           </ul>
 
-       
-<div class="myRestaurants-container">
+          <h1><%= title %></h1>
+          <div class="myRestaurants-container">
         <table id="list">
           <thead>
             <tr>  
               <th>Restuarant Name</th>
               <th>Incorporation Date</th>
               <th>Cuisine Type</th>
+              <th>Address</th>
+              <th>Contact Number</th>
+              <th>Payment Options</th>
               <th>Restaurant Information</th>
             </tr>
 
 
             <tr>
-              <td><%= MyRestaurant.name%></td>
-              <td><%= MyRestaurant.registrationDate %></td>
+              <td><%= MyRestaurant.name %></td>
+              <td id="incorpDate"><%= MyRestaurant.registrationDate %></td>
               <td><%= MyRestaurant.cuisineType %></td>
+              <td id="restaurantAddress"><%= MyRestaurant.address %></td>
+              <td><%= MyRestaurant.contactNumber %></td>
+              <td id="paymentOptions"><%= MyRestaurant.paymentOptions %></td>
               <td id="restInfo"><%= MyRestaurant.restaurantInfo %></td>
             </tr>
-            <% } %>
           </thead>
         </table>
         </div>

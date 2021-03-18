@@ -20,15 +20,15 @@ module.exports = {
 
 async function myRestaurants(req,res){
   let MyRestaurants = await RESTAURANTMODEL.find({userId: req.user._id});
-  // console.log("RESTAURANT LIST")
-  // console.log(MyRestaurants)
+  console.log("RESTAURANT LIST")
+  console.log(MyRestaurants)
   res.render('restaurantUser/myRestaurants',{MyRestaurants: MyRestaurants})
 }
 
 
-async function myRestaurantsDetails(req, res) {
-   await RESTAURANTMODEL.findById(req.params.id, function(err, MyRestaurant) {
-   console.log(MyRestaurant)
+ function myRestaurantsDetails(req, res) {
+    RESTAURANTMODEL.findById(req.params.id, function(err, MyRestaurant) {
+  //  console.log(MyRestaurant)
     res.render('restaurantUser/details', { title: 'My Restaurant Details', MyRestaurant});
   });
 }
@@ -46,7 +46,10 @@ async function addedRestaurant(req,res){
   await RESTAURANTMODEL.create ({
     name: req.body.title,
     registrationDate: req.body.releaseYear,
-    cuisineType: req.body.Cuisine,
+    cuisineType: req.body.cuisine,
+    address: req.body.address,
+    contactNumber: req.body.contactNumber, 
+    paymentOptions: req.body.paymentOptions,
     restaurantInfo: req.body.comment,
     partnerReady: false,
     userId: req.user.id,

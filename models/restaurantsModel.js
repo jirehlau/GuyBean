@@ -10,7 +10,11 @@ var restaurantSchema = new Schema({
     name: String,
     registrationDate: Date,
     cuisineType: String,
+    address: String,
+    contactNumber: String, 
+    paymentOptions: String,
     restaurantInfo: String,
+    paymentOptions: String,
     partnerReady: { type: Boolean, default: false},
   }, {
     timestamps: true
