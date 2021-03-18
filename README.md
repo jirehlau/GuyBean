@@ -13,6 +13,5 @@ Navbar after you log in which gives the option for the login user to add their b
 ![Add restaurant](public/images/addRestaurant.png)
 This is where you can add a restaurant information include the name, date, cuisine type, and any other additional information
 
-# My restaurants
-![My Restaurant](public/images/myRestaurants.png)
+
 In this section, the user can see the list of restaurants they have added within their own login profile. They can also have an option to edit or delete their restaurant if necessary. 

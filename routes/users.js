@@ -11,8 +11,6 @@ router.get('/', userCtrl.index);
 
 router.get('/loggedin',userCtrl.loggedIn);
 
-router.get('/restaurantprofile',userCtrl.restaurantProfile)
-
 router.get('/addrestaurant',userCtrl.addRestaurants)
 
 router.get ('/forBusinesses',userCtrl.forBusinesses)

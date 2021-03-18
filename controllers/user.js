@@ -7,7 +7,6 @@ module.exports = {
   addFact,
   delFact,
   loggedIn,
-  restaurantProfile,
   sushiOne,
   addRestaurants,
   addedRestaurant,
@@ -55,10 +54,6 @@ async function addedRestaurant(req,res){
     userId: req.user.id,
   })
   res.redirect('http://localhost:3000/users/myRestaurants')
-}
-
-function restaurantProfile(req,res){
-  res.render('restaurantUser/restaurantProfile')
 }
 
 function sushiOne(req,res){
