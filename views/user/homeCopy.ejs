@@ -31,9 +31,9 @@
         <h2>Home Page Copy</h2>
         <% for (let hpc of homePageCopy) {%>
 
-        <h5><%= hpc.name %></5>
+        <h5><a href="/users/homecopy/<%= hpc._id %>"><%= hpc.name %></a></h5>
         <h6><%= hpc.contactNumber %></6>
-
+            <div class="image"><%= hpc.pictureURL %></div>
 
         <% } %>
 

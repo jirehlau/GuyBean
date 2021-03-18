@@ -17,24 +17,22 @@ module.exports = {
   team,
   myRestaurantsDetails,
   homeCopy,
-  // myRestaurantTemplate,
+  myRestaurantTemplate,
 };
 
 
 async function homeCopy(req,res){
-  let homePageCopy = await RESTAURANTMODEL.find();
+ let homePageCopy = await RESTAURANTMODEL.find();
   console.log('HOME PAGE COPY')
   console.log(homePageCopy)
   res.render('user/homeCopy', {homePageCopy: homePageCopy})
 }
 
-//  async function myRestaurantTemplate(req,res){
-//       let MYRESTAURANTTEMPLATE = await RESTAURANTMODEL.findById(req.params.id);
-//       console.log(MYRESTAURANTTEMPLATE)
-//       res.render('restaurants/restaurantTemplate', {MYRESTAURANTTEMPLATE: MYRESTAURANTTEMPLATE});
-//     };
-  
-  
+  async function myRestaurantTemplate(req,res){
+   let template = await RESTAURANTMODEL.findById(req.params.id);
+   console.log(req.params.id)
+    res.render('restaurants/restaurantTemplate', {template: template})
+  }
 
 async function myRestaurants(req,res){
   let MyRestaurants = await RESTAURANTMODEL.find({userId: req.user._id});
@@ -68,6 +66,7 @@ async function addedRestaurant(req,res){
     address: req.body.address,
     contactNumber: req.body.contactNumber, 
     paymentOptions: req.body.paymentOptions,
+    pictureURL: req.body.pictureURL,
     restaurantInfo: req.body.comment,
     partnerReady: false,
     userId: req.user.id,

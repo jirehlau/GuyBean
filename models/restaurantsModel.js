@@ -14,6 +14,7 @@ var restaurantSchema = new Schema({
     contactNumber: String, 
     paymentOptions: String,
     restaurantInfo: String,
+    pictureURL: String,
     paymentOptions: String,
     partnerReady: { type: Boolean, default: false},
   }, {
