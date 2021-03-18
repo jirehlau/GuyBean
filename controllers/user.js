@@ -17,25 +17,29 @@ module.exports = {
   team,
   myRestaurantsDetails,
   homeCopy,
-  myRestaurantTemplate,
+  // myRestaurantTemplate,
 };
 
 
-function homeCopy(req,res){
-  res.render('user/homeCopy')
+async function homeCopy(req,res){
+  let homePageCopy = await RESTAURANTMODEL.find();
+  console.log('HOME PAGE COPY')
+  console.log(homePageCopy)
+  res.render('user/homeCopy', {homePageCopy: homePageCopy})
 }
 
-function myRestaurantTemplate(req,res){
-  let RestaurantTemplate = RESTAURANTMODEL.findById(req.params.id, function(err, RestaurantTemplate) {
-res.render('restaurants/restaurantTemplate', {RestaurantTemplate:RestaurantTemplate})
-  }); 
-  }
-
+//  async function myRestaurantTemplate(req,res){
+//       let MYRESTAURANTTEMPLATE = await RESTAURANTMODEL.findById(req.params.id);
+//       console.log(MYRESTAURANTTEMPLATE)
+//       res.render('restaurants/restaurantTemplate', {MYRESTAURANTTEMPLATE: MYRESTAURANTTEMPLATE});
+//     };
+  
+  
 
 async function myRestaurants(req,res){
   let MyRestaurants = await RESTAURANTMODEL.find({userId: req.user._id});
-  console.log("RESTAURANT LIST")
-  console.log(MyRestaurants)
+  // console.log("RESTAURANT LIST")
+  // console.log(MyRestaurants)
   res.render('restaurantUser/myRestaurants',{MyRestaurants: MyRestaurants})
 }
 

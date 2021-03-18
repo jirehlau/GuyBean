@@ -28,60 +28,16 @@
 
      
         </ul>
-        <h1>Home Page Copy</h1>
+        <h2>Home Page Copy</h2>
+        <% for (let hpc of homePageCopy) {%>
 
-<!-- THIS IS MY MAP, WHICH IS RIGHT BELOW MY NAVBAR -->
+        <h5><%= hpc.name %></5>
+        <h6><%= hpc.contactNumber %></6>
 
-  <div class="googleMaps">
-    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.9205779508434!2d-79.38871828408237!3d43.670621579120684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34ae7b7df47d%3A0xe2028002e7a6144a!2sBloor%E2%80%93Yonge%20Station!5e0!3m2!1sen!2sca!4v1615715611533!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" class="Map"></iframe></iframe></p>
-  </div>
 
-<!-- THIS IS MY SEARCH BAR SECTION  -->
-<div class="searchBar-section">
-<div class="search-bar" style= "justify-content: center; align-items: center;">
-	<input type="text" class="input" 
-	placeholder="What cuisine are you looking for?">
-	<div class="searchbtn"><i class="fas fa-search"></i></div>
+        <% } %>
+
+
 </div>
-</div>
-
-<!-- FOOD DISCOUNT INPUT  -->
-
-<div class="discount-coupon">
-  <img src="/images/food-coupon.jpg" class="coupon">
-</div>
-
-<!-- RESTAURANT TITLE  -->
-
-<div class="Restaurant-title">
-  <hr>
-   <ul class="restaurant-view">
-    <li><h1><a href="#">Restaurants</a></h1></li>
-    <li><h3><a href="#">View all</a></h3></li>
-  </ul>
-  <hr>
-</div>
-
-<!-- FIRST SET OF RESTAURANT IMAGES AND OPTIONS -->
-<!-- FIRST SET OF RESTAURANT IMAGES AND OPTIONS -->
-<!-- FIRST SET OF RESTAURANT IMAGES AND OPTIONS -->
-<div class="horizontal-list-content">
-    <div class="flex-swipe-wrapper">
-
-      <!-- RESTAURANT 1 -->
-      <div class="grid-card-wrapper">
-        <a href="/users/homecopy/restauranttemplate" class="no-underline">
-          <div class="grid-card">
-            <div class="grid-card-image-wrapper"> <img src="/images/jap.jpeg" class="grid-card-image"></div>
-            <div class="flex-column">
-              <div class="title">Sushi One</div><br>
-              <div class="subTitle">Japanese  ||  Toronto</div>
-              <div class="subTitle">$$$  ||  2506 reservations</div>
-
-            </div>
-          </div>
-        </a>
-      </div>
-
-  </div>
- 
+</body>
+</html>
