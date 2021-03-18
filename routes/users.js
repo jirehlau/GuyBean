@@ -11,6 +11,7 @@ router.get('/', userCtrl.index);
 
 router.get('/homecopy',userCtrl.homeCopy);
 
+router.get('/homecopy/restauranttemplate',userCtrl.restaurantTemplate);
 
 router.get('/loggedin',userCtrl.loggedIn);
 

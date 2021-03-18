@@ -17,7 +17,18 @@ module.exports = {
   team,
   myRestaurantsDetails,
   homeCopy,
+  restaurantTemplate,
 };
+
+
+function homeCopy(req,res){
+  res.render('user/homeCopy')
+}
+
+function restaurantTemplate(req,res){
+  res.render('restaurants/restaurantTemplate')
+}
+
 
 async function myRestaurants(req,res){
   let MyRestaurants = await RESTAURANTMODEL.find({userId: req.user._id});
@@ -57,12 +68,6 @@ async function addedRestaurant(req,res){
   })
   res.redirect('http://localhost:3000/users/myRestaurants')
 }
-
-
-async function homeCopy(req,res){
-  res.render('user/homeCopy')
-}
-
 
 
 
