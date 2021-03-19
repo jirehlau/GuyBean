@@ -16,7 +16,8 @@ router.get('/homecopy/:id',userCtrl.myRestaurantTemplate);
 router.get('/loggedin',userCtrl.loggedIn);
 
 router.get('/addrestaurant',userCtrl.addRestaurants)
-router.post('/addrestaurant', userCtrl.addedRestaurant)
+
+router.get('/addrestaurant', userCtrl.addedRestaurant)
 
 router.get ('/forBusinesses',userCtrl.forBusinesses)
 
