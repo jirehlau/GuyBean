@@ -71,7 +71,7 @@ async function addedRestaurant(req,res){
     partnerReady: false,
     userId: req.user.id,
   })
-  res.render('restaurantUser/myRestaurants')
+  res.redirect('https://guybean-prototype.herokuapp.com/users/myRestaurants')
 }
 
 

@@ -16,16 +16,17 @@ router.get('/homecopy/:id',userCtrl.myRestaurantTemplate);
 router.get('/loggedin',userCtrl.loggedIn);
 
 router.get('/addrestaurant',userCtrl.addRestaurants)
+router.post('/addrestaurant', userCtrl.addedRestaurant)
 
 router.get ('/forBusinesses',userCtrl.forBusinesses)
 
-router.get('/myrestaurants',userCtrl.myRestaurants)
+router.post('/myrestaurants',userCtrl.myRestaurants)
 
 router.get('/myrestaurants/:id',userCtrl.myRestaurantsDetails)
 
 router.get('/sushiOne',userCtrl.sushiOne)
 
-router.post('/addedrestaurant', userCtrl.addedRestaurant)
+
 
 router.post('/facts', isLoggedIn, userCtrl.addFact);
 
