@@ -1,17 +1,29 @@
-# GuyBean
+
+<h1>GuyBean</h1>
 
 GuyBean is a web-based platform offering dine ins bookings by providing time-based discounts of up to 50% off for selected food items.
 
-# GuyBean Homepage
+GuyBean started its production during the second project of General Assembly's Software Engineering Immservie Bootcamp. 
+
+<h1>Visit the site</h1>
+[GuyBean][https://guybean-prototype.herokuapp.com/users/]
+
+<h2>GuyBean Homepage</h2>
 ![Homepage image](public/images/homepage.png)
 
-# Navbar after login
-![Navbar after login](public/images/navbar-login.png)
-Navbar after you log in which gives the option for the login user to add their business and view their restaurants
+<h2>Add restaurant</h2>
+![Homepage image](public/images/addRestaurant.png)
 
-# Add restaurant
-![Add restaurant](public/images/addRestaurant.png)
-This is where you can add a restaurant information include the name, date, cuisine type, and any other additional information
+<h2>View your restaurants</h2>
+![Homepage image](public/images/myRestaurants.png)
 
+<h2>View restaurant/restaurants you have added</h2>
+![Homepage image](public/images/listOfRestaurants.png)
 
-In this section, the user can see the list of restaurants they have added within their own login profile. They can also have an option to edit or delete their restaurant if necessary. 
+<h2>Technologies Used</h2>
+* EJS, CSS, JS, Node.JS, MongoDB, Mongoose
+
+<h2>Next Steps</h2>
+* Continue working on the database and building more information that restaurant owners can add to their profile
+* Have the ability for users to utlizie full CRUD data opreations and not just create
+* Organize the routes, models, and controllers folder
