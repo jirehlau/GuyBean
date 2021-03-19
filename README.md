@@ -22,7 +22,7 @@ GuyBean started its production during the second project of General Assembly's S
 
 <h2>View restaurant/restaurants you have added</h2>
 
-![List of restaurants](/public/images/listOfRestaurants)
+![List of restaurants](public/images/restaurantList)
 
 
 <h2>Technologies Used</h2>
