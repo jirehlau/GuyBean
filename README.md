@@ -33,6 +33,6 @@ GuyBean started its production during the second project of General Assembly's S
 * EJS, CSS, JS, Node.JS, MongoDB, Mongoose
 
 <h2>Next Steps</h2>
-* Continue working on the database and building more information that restaurant owners can add to their profile
+* Continue working on the database and building more information that restaurant owners can add to their profile<br>
 * Have the ability for users to utlizie full CRUD data opreations and not just create
 * Organize the routes, models, and controllers folder
