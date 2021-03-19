@@ -25,7 +25,7 @@ router.get('/myrestaurants/:id',userCtrl.myRestaurantsDetails)
 
 router.get('/sushiOne',userCtrl.sushiOne)
 
-router.post('/addedrestaurant', userCtrl.addedRestaurant)
+router.post('/myrestaurants', userCtrl.addedRestaurant)
 router.post('/facts', isLoggedIn, userCtrl.addFact);
 
 router.delete('/facts/:id', userCtrl.delFact);
