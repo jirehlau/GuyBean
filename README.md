@@ -22,7 +22,7 @@ GuyBean started its production during the second project of General Assembly's S
 
 <h2>View restaurant/restaurants you have added</h2>
 
-![View list of restaurants]("public/images/listOfRestaurants.png")
+![List of restaurants](public/images/listOfRestaurants.png)
 
 <h2>Technologies Used</h2>
 * EJS, CSS, JS, Node.JS, MongoDB, Mongoose
