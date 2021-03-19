@@ -19,7 +19,7 @@ router.get('/addrestaurant',userCtrl.addRestaurants)
 
 router.get ('/forBusinesses',userCtrl.forBusinesses)
 
-router.post('/myrestaurants',userCtrl.myRestaurants)
+router.get('/myrestaurants',userCtrl.myRestaurants)
 
 router.get('/myrestaurants/:id',userCtrl.myRestaurantsDetails)
 
