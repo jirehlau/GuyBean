@@ -9,13 +9,13 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 
   <script type="text/javascript" src="/GuyBean/public/javascripts/app.js"></script>
-  <link rel='stylesheet' href='/stylesheets/restaurants-style.css' />
+  <link rel='stylesheet' href='/stylesheets/restaurantTemplate-style.css' />
 </head>
 
 <body>
   <!-- NAVBAR -->
   <div class="navbar">
-      <li><a href="/users"><img src="/images/GuyBean-Logo.png" class="GuyBean-Logo"></a></li>
+      <li><a href="/users/homecopy"><img src="/images/GuyBean-Logo.png" class="GuyBean-Logo"></a></li>
         <ul class="main-nav">
             <li class="dropdown"><a href="#">Company</a>
               <ul class="dropdown-content">
@@ -27,11 +27,32 @@
             <li><a href="/users/forBusinesses">For Businesses</a> </li>&nbsp
         </ul>
 
-  <h1>Restaurant Template</h1>
-    
-  <h5><%= template.name %></a></h5>
+  <h1><%= template.name %></h1>
 
- 
+
+  <div class="restaurant-container">
+    <table id="list-of-info">
+      <thead>
+        <div class="image-container">
+          <img src="<%= template.pictureURL %>" class="image"></td>
+        </div>
+        <tr>
+          <td>Cuisine Type:<br>
+          <%= template.cuisineType %></td>
+          <td>Address:<br>
+          <%= template.address %></td>
+          <td>Contacat Number: <br>
+          <%= template.contactNumber %></td>
+          <td>Payment Options:<br>
+           <%= template.paymentOptions %></td>
+          <td>Additional Information: <br>
+          <%= template.restaurantInfo %></td>
+          <td>
+        </tr>
+      </thead>
+    </table>
+    </div>
+    </div>
 
 </div>
 </body>

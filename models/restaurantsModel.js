@@ -15,7 +15,6 @@ var restaurantSchema = new Schema({
     paymentOptions: String,
     restaurantInfo: String,
     pictureURL: String,
-    paymentOptions: String,
     partnerReady: { type: Boolean, default: false},
   }, {
     timestamps: true
