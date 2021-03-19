@@ -13,7 +13,7 @@ GuyBean started its production during the second project of General Assembly's S
 
 ![Homepage](/public/images/homepage.png)
 
-![Homepage2](/public/images/homepage2.png)
+![Homepage2](public/images/homepage2.png)
 
 
 <h2>Add restaurant</h2>
