@@ -31,28 +31,19 @@
 
 
   <div class="restaurant-container">
-    <table id="list-of-info">
-      <thead>
-        <div class="image-container">
-          <img src="<%= template.pictureURL %>" class="image"></td>
+        <div class="grid image">
+          <img src="<%= template.pictureURL %>" class="image">
         </div>
-        <tr>
-          <td>Cuisine Type:<br>
-          <%= template.cuisineType %></td>
-          <td>Address:<br>
-          <%= template.address %></td>
-          <td>Contacat Number: <br>
-          <%= template.contactNumber %></td>
-          <td>Payment Options:<br>
-           <%= template.paymentOptions %></td>
-          <td>Additional Information: <br>
-          <%= template.restaurantInfo %></td>
-          <td>
-        </tr>
-      </thead>
-    </table>
+        <div class="grid-list">
+          <li class="list">Cuisine Type:  <%= template.cuisineType %></li><br>
+          <li class="list">Address:  <%= template.address %></li><br>
+          <li class="list">Contact Number: <%= template.contactNumber %></li><br>
+          <li class="list"> Payment Options: <%= template.paymentOptions %></li><br>
+          <li class="list">Additional Information:  <%= template.restaurantInfo %></li><br>
+      </div>
     </div>
-    </div>
+
+ 
 
 </div>
 </body>
