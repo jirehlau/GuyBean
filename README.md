@@ -9,16 +9,20 @@ GuyBean started its production during the second project of General Assembly's S
 [Website]:https://guybean-prototype.herokuapp.com/users/
 
 <h2>GuyBean Homepage</h2>
-![Homepage-image](/public/images/homepage.png)
+
+![Homepage](/public/images/homepage.png)
 
 <h2>Add restaurant</h2>
-![Homepage image](public/images/addRestaurant.png)
 
-<h2>View your restaurants</h2>
-![Homepage image](public/images/myRestaurants.png)
+![Add restaurant](public/images/addRestaurant.png)
+
+<h2>Your restaurants</h2>
+
+![Your restaurants](public/images/myRestaurants.png)
 
 <h2>View restaurant/restaurants you have added</h2>
-![Homepage image]("public/images/listOfRestaurants.png")
+
+![View list of restaurants]("public/images/listOfRestaurants.png")
 
 <h2>Technologies Used</h2>
 * EJS, CSS, JS, Node.JS, MongoDB, Mongoose
